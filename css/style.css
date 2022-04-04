@@ -5,7 +5,7 @@
     background-color: rgb(203, 245, 227);
     color: rgb(2, 16, 28);
     height: 30%;
-    width: 40%;
+    width: 70%;
     margin: 50px auto;
     padding: 20px;
     /* border-style: groove;
@@ -14,5 +14,30 @@
     border: 5px solid rgb(12, 27, 145);
     /* border-top-left-radius: 50px;
     border-end-end-radius: 50px; */
-    border-radius: 20px 40px 10px 70px;
+    border-radius: 20px;
+    text-align: center;
+}
+.cont{
+    display: flex;
+}
+.sub1{
+    background-color: blueviolet;
+    color: white;
+    margin: 10px;
+    border: 2px solid yellow;
+    width: 50%;
+    
+}
+.sub2{
+    background-color: aqua;
+    color:blue;
+    margin: 10px;
+    border: 2px solid greenyellow;
+    width: 50%;
+}
+.cont2{
+    border: 2px solid red;
+    padding: 5px;
+    background-color: black;
+    color: aliceblue;
 }
