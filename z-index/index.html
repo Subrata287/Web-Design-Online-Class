@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position:absolute;
+        }
+        .main{
+            background-color: aqua;
+            color: blue;
+            width: 400px;
+            height: 400px;
+            z-index: 10;
+            opacity: 50%;
+        }
+        .sub{
+            background-color: tomato;
+            color: aliceblue;
+            width: 300px;
+            height: 300px;
+            z-index: 9;
+            left: 50px;
+            top: 30px;
+            opacity: 50%;
+        }
+        .sub2{
+            background-color: rgb(35, 223, 70);
+            color: rgb(31, 87, 136);
+            width: 200px;
+            height: 200px;
+            z-index: 3;
+            left: 80px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        1 box
+    </div>
+    <div class="sub">
+        2 Box
+    </div>
+    <div class="sub2">
+        3 Box
+    </div>
+</body>
+</html>
