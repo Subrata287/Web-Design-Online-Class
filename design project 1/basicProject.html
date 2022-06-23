@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    h2,h3,h4{
+        text-align: center;
+    }
+
+    .container{
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+    .contuct{
+        background-color: black;
+        color: aliceblue;
+        padding: 10vh 30vh;
+        margin: 0;
+    }
+  </style>
+</head>
+<body>
+<!-- Heding Section -->
+<div class="container-fluid p-5 bg-primary text-white text-center">
+  <h1>My First Basic Design Project</h1>
+  <p>Date: 23/06/2022</p> 
+</div>
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MACOUT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#notice">Notice</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#admission">Admission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contuct">Contuct Us</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Department</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">BCA</a></li>
+              <li><a class="dropdown-item" href="#">BBA</a></li>
+              <li><a class="dropdown-item" href="#">MCA</a></li>
+              <li><a class="dropdown-item" href="#">MBA</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Section 1 -->
+<div class="container mt-5" id="notice">
+    <h2>NOTICE BOARD</h2>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Notice 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Notice 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Notice 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+ <!-- Section 2 -->
+
+ <div class="container mt-3" id="admission">
+    <h2>Admission</h2>
+    <p>Try to submit your form.</p>
+      
+    <form action="/action_page.php" class="was-validated">
+      <div class="mb-3 mt-3">
+        <label for="uname" class="form-label">Username:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+        <label class="form-check-label" for="myCheck">I agree on blabla.</label>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+<!-- Contuct us -->
+<div class="container mt-3" id="contuct">
+    <h2>Contuct Us</h2>
+    <div class="mb-3 mt-3 contuct">
+        <h3>Chhatna, Bankura</h3>
+        <h4>
+            Mob No: +91 8637380848
+            Email: deysonu287@gmail.com
+        </h4>
+    </div>
+</div>
+</body>
+</html>
